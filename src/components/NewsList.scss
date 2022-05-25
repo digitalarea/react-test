@@ -1,0 +1,42 @@
+
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 40px;
+  padding: 0 30px;
+
+  &_item {
+    width: 100%;
+  }
+
+  &_img {
+    margin-bottom: 15px;
+
+    & img {
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &_date {
+    font-size: 15px;
+    color: #9dadb7;
+  }
+
+  &_title {
+    font-weight: bold;
+    color: #4f616c;
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  &_subtitle {
+    color: #4f616c;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 0 15px;
+  }
+}

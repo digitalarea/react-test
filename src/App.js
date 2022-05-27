@@ -40,40 +40,40 @@ function App() {
 
   const newsItems = [
     {
-      id: "1",
-      img: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/foto_sergey_1024.jpg",
+      id: 1,
+      imgSrc: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/foto_sergey_1024.jpg",
       date: "22 май 2022",
       title: "«Количество экспонентов RosUpack сохранилось на уровне прошлого года»",
       subtitle: "Сергей Дитёв, директор выставки RosUpack и Форума Printech, ответил на вопросы редакции журнала «Тара и упаковка»",
       link: "Читать далее",
     },
     {
-      id: "2",
-      img: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/d-107_cr.jpg",
+      id: 2,
+      imgSrc: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/d-107_cr.jpg",
       date: "22 май 2022",
       title: "«Количество экспонентов RosUpack сохранилось на уровне прошлого года»",
       subtitle: "Сергей Дитёв, директор выставки RosUpack и Форума Printech, ответил на вопросы редакции журнала «Тара и упаковка»",
       link: "Читать далее",
     },
     {
-      id: "3",
-      img: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/img_20211029_095152_1024.jpg",
+      id: 3,
+      imgSrc: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/img_20211029_095152_1024.jpg",
       date: "22 май 2022",
       title: "«Количество экспонентов RosUpack сохранилось на уровне прошлого года»",
       subtitle: "Сергей Дитёв, директор выставки RosUpack и Форума Printech, ответил на вопросы редакции журнала «Тара и упаковка»",
       link: "Читать далее",
     },
     {
-      id: "4",
-      img: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/_imu9421.jpg",
+      id: 4,
+      imgSrc: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/_imu9421.jpg",
       date: "22 май 2022",
       title: "«Количество экспонентов RosUpack сохранилось на уровне прошлого года»",
       subtitle: "Сергей Дитёв, директор выставки RosUpack и Форума Printech, ответил на вопросы редакции журнала «Тара и упаковка»",
       link: "Читать далее",
     },
     {
-      id: "5",
-      img: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/343434_1024.jpg",
+      id: 5,
+      imgSrc: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/343434_1024.jpg",
       date: "22 май 2022",
       title: "«Количество экспонентов RosUpack сохранилось на уровне прошлого года»",
       subtitle: "Сергей Дитёв, директор выставки RosUpack и Форума Printech, ответил на вопросы редакции журнала «Тара и упаковка»",
@@ -81,23 +81,23 @@ function App() {
     },
     {
       id: "6",
-      img: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/1024_00.jpg",
+      imgSrc: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/1024_00.jpg",
       date: "22 май 2022",
       title: "«Количество экспонентов RosUpack сохранилось на уровне прошлого года»",
       subtitle: "Сергей Дитёв, директор выставки RosUpack и Форума Printech, ответил на вопросы редакции журнала «Тара и упаковка»",
       link: "Читать далее",
     },
     {
-      id: "7",
-      img: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/overcrease_flat-bed-3.jpg",
+      id: 7,
+      imgSrc: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/overcrease_flat-bed-3.jpg",
       date: "22 май 2022",
       title: "«Количество экспонентов RosUpack сохранилось на уровне прошлого года»",
       subtitle: "Сергей Дитёв, директор выставки RosUpack и Форума Printech, ответил на вопросы редакции журнала «Тара и упаковка»",
       link: "Читать далее",
     },
     {
-      id: "8",
-      img: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/00_imu9421.jpg",
+      id: 8,
+      imgSrc: "https://ite-prod-cdn-end.azureedge.net/sharedmedia/rosupack/media/assets/00_imu9421.jpg",
       date: "22 май 2022",
       title: "«Количество экспонентов RosUpack сохранилось на уровне прошлого года»",
       subtitle: "Сергей Дитёв, директор выставки RosUpack и Форума Printech, ответил на вопросы редакции журнала «Тара и упаковка»",
@@ -110,7 +110,7 @@ function App() {
       {/* <ClassCounter/>
       <Counter/> */}
       <Facts data={facts} />
-      <NewsList article={newsItems}/>
+      <NewsList articleList={newsItems}/>
     </div>
   );
 }

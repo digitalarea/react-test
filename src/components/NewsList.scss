@@ -1,4 +1,4 @@
-
+@import "../scss/variables.scss";
 
 .article {
   display: grid;
@@ -38,5 +38,17 @@
     font-weight: 300;
     font-size: 18px;
     margin: 0 0 15px;
+  }
+
+  @media (max-width: $mq-xxl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: $mq-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mq-sm) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

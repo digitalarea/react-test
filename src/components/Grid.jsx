@@ -4,7 +4,7 @@ import NewsListStyles from "./NewsList.module.scss";
 const Grid = ({ children }) => {
   return (
     <div className={NewsListStyles.article}>
-      { children };
+      { children }
     </div>
   );
 };

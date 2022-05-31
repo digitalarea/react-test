@@ -111,7 +111,7 @@ function App() {
     <div className="App">
       {/* <ClassCounter/>
       <Counter/> */}
-      <Facts data={facts} />
+      {/* <Facts data={facts} /> */}
       {/* <NewsList articleList={newsItems}/> */}
       <Grid>
       {newsItems.map((articleItem) => {

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { Children, useState } from "react";
 // import ClassCounter from "./components/ClassCounter";
 // import Counter from "./components/Counter";
 import Facts from "./components/Facts";
-import NewsList from "./components/NewsList";
+// import NewsList from "./components/NewsList";
+import NewsCard from "./components/NewsCard";
+import Grid from "./components/Grid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
@@ -110,7 +112,22 @@ function App() {
       {/* <ClassCounter/>
       <Counter/> */}
       <Facts data={facts} />
-      <NewsList articleList={newsItems}/>
+      {/* <NewsList articleList={newsItems}/> */}
+      <Grid>
+      {newsItems.map((articleItem) => {
+        return (
+          <NewsCard
+            key={articleItem.id}
+            imgSrc={articleItem.imgSrc}
+            date={articleItem.date}
+            title={articleItem.title}
+            subtitle={articleItem.subtitle}
+            link={articleItem.link}
+          />
+        )
+      })}
+
+      </Grid>
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import React from "react";
-import NewsListStyles from "./NewsList.module.scss";
+import NewsGridStyles from "./NewsGrid.module.scss";
 
 const Grid = ({ children }) => {
   return (
-    <div className={NewsListStyles.article}>
+    <div className={NewsGridStyles.NewsGrid}>
       { children }
     </div>
   );

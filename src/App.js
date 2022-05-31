@@ -1,11 +1,12 @@
 import React, { Children, useState } from "react";
 // import ClassCounter from "./components/ClassCounter";
 // import Counter from "./components/Counter";
-import Facts from "./components/Facts";
+// import Facts from "./components/Facts";
 // import NewsList from "./components/NewsList";
 import NewsCard from "./components/NewsCard";
-import Grid from "./components/Grid";
+import Grid from "./components/NewsGrid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./scss/Main.scss"
 
 function App() {
   // const [value, setValue] = useState('Текст в инпуте');

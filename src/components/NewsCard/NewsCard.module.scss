@@ -1,0 +1,40 @@
+@import "../../scss/variables.scss";
+
+  .item {
+    width: 100%;
+  }
+
+  .img {
+    margin-bottom: 15px;
+    height: 150px;
+    overflow: hidden;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .date {
+    font-size: 15px;
+    color: #9dadb7;
+  }
+
+  .title {
+    font-weight: bold;
+    color: #4f616c;
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  .subtitle {
+    color: #4f616c;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 0 15px;
+  }
+
+
+

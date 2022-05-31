@@ -1,0 +1,21 @@
+@import "../../scss/variables.scss";
+
+ .NewsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 40px;
+    padding: 0 30px;
+
+    @media (max-width: $mq-xxl) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    
+    @media (max-width: $mq-lg) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    
+    @media (max-width: $mq-sm) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+  }
